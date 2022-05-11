@@ -1,0 +1,3 @@
+[submodule "gulp-in-react-submodule"]
+	path = gulp-in-react-submodule
+	url = https://github.com/likearts/gulp-in-react-submodule
