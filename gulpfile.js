@@ -68,33 +68,6 @@ gulp.task('sub', function() {
   .pipe(gulp.dest(sub.target));
 });
 
-/*
-gulp.task('subCss', function() {
-  gulp.src([
-    sub.source + '/*.*'
-  ])
-  .pipe(minifycss())
-  .pipe(gulp.dest(css.subTarget));
-});
-
-gulp.task('subJs', function() {
-  gulp.src([
-    js.sub + '/*.js'
-  ])
-  .pipe(uglify({mangle:true}).on('error', gutil.log))
-  .pipe(gulp.dest(js.subTarget));
-});
-
-gulp.task('subAssets', function() {
-  gulp.src([
-    js.sub + '/*.*'
-  ])
-  .pipe(uglify({mangle:true}).on('error', gutil.log))
-  .pipe(gulp.dest(js.subTarget));
-});
-*/
-
-
 gulp.task('default', ['html', 'css', 'js', 'sub']);
 
 gulp.task('watch', function() {
